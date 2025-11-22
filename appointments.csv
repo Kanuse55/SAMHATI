@@ -1,0 +1,3 @@
+id,patient,doctor,condition,status,timestamp
+1,kanuse,doc,acne,Accepted,2025-11-23 00:14
+2,kanuse,doc,acne,Rejected,2025-11-23 00:29

@@ -1,0 +1,8 @@
+streamlit
+pandas
+plotly
+openai
+deep-translator
+scikit-learn
+numpy
+bcrypt
