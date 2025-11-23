@@ -5,4 +5,6 @@ kanuse,$2b$12$8qB72b1amzNUaNL1UzM1Nu1H/o5z/7qFF2gz31LT5gyZzmQYhiFeC,patient
 gwin,$2b$12$UAfFHiNIPbSmSRMzKULuyu2V2BU4PpavfPkhO8WCFrm2eXBtOeWoO,doctor
 doc,$2b$12$lVLLvV9cz3YKl57kXGqxkOj0S.8yGi18m3f0R0yxbf4omDQaH8gGy,doctor
 guest1,$2b$12$K4330rffhRsLZuRdKaQGHeKN39sJexRtWgjcu9ArEj6wr6JxCMq8G,patient
-
+dr_general,$2b$12$8qB72b1amzNUaNL1UzM1Nu1H/o5z/7qFF2gz31LT5gyZzmQYhiFeC,doctor
+dr_skin,$2b$12$8qB72b1amzNUaNL1UzM1Nu1H/o5z/7qFF2gz31LT5gyZzmQYhiFeC,doctor
+Newuser,$2b$12$NIARsqxki2Uwh/UygkHTreGs9ji4BccpD2PUm.PdRlm7nomTlBpZW,patient

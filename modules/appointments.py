@@ -13,7 +13,6 @@ def request_appointment(patient, doctor, condition):
     init_appointments_db()
     df = pd.read_csv(APPOINTMENTS_FILE)
     
-    # Generate a simple ID
     new_id = len(df) + 1
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
     
@@ -33,10 +32,26 @@ def request_appointment(patient, doctor, condition):
 def get_doctor_appointments(doctor_name):
     init_appointments_db()
     df = pd.read_csv(APPOINTMENTS_FILE)
-    # Return appointments for this doctor (newest first)
+    # Return appointments for this doctor
     return df[df['doctor'] == doctor_name].sort_values(by="id", ascending=False)
+
+def get_patient_appointments(patient_name):
+    """FETCH: Returns all appointments for a specific patient."""
+    init_appointments_db()
+    df = pd.read_csv(APPOINTMENTS_FILE)
+    return df[df['patient'] == patient_name].sort_values(by="id", ascending=False)
 
 def update_status(appt_id, new_status):
     df = pd.read_csv(APPOINTMENTS_FILE)
     df.loc[df['id'] == appt_id, 'status'] = new_status
+    df.to_csv(APPOINTMENTS_FILE, index=False)
+
+def delete_appointment(appt_id):
+    """DELETE: Removes an appointment permanently."""
+    if not os.path.exists(APPOINTMENTS_FILE): return
+    df = pd.read_csv(APPOINTMENTS_FILE)
+    
+    # Filter out the row with the matching ID
+    df = df[df['id'] != appt_id]
+    
     df.to_csv(APPOINTMENTS_FILE, index=False)
