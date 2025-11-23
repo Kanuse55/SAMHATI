@@ -9,7 +9,7 @@ from modules import auth, model, chatbot, doctor_manager, appointments
 st.set_page_config(page_title="Drug Recommendation System", page_icon="🏥", layout="wide")
 
 # paste token here
-GITHUB_TOKEN = "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" 
+GITHUB_TOKEN = "Token" 
 
 # css
 st.markdown("""
