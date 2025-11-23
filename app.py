@@ -6,10 +6,10 @@ from modules import auth, model, chatbot, doctor_manager, appointments
 
 #Home page 
 
-st.set_page_config(page_title="PharmaConnect AI", page_icon="🏥", layout="wide")
+st.set_page_config(page_title="Drug Recommendation System", page_icon="🏥", layout="wide")
 
 # paste token here
-GITHUB_TOKEN = "Token" 
+GITHUB_TOKEN = "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" 
 
 # css
 st.markdown("""
@@ -297,7 +297,7 @@ def landing_page():
     # Hero Section
     st.markdown("""
     <div class="landing-header">
-        <h1>🏥 PharmaConnect AI</h1>
+        <h1>🏥 Drug Recommendation System</h1>
         <p>Your Intelligent Medical Companion</p>
     </div>
     """, unsafe_allow_html=True)
